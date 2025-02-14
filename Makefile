@@ -14,7 +14,7 @@ DOCKER := $(or $(OCI_EXE), docker)
 BUILD_CMD := $(or $(BUILD_CMD), build)
 
 # Docker organization to pull the images from
-ORG = dockcross
+ORG := $(or $(ORG), dockcross)
 
 # Directory where to generate the dockcross script for each images (e.g bin/dockcross-manylinux2014-x64)
 BIN = ./bin
